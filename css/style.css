@@ -119,6 +119,9 @@ Components
   .nav__item-link {
     width: 100vw;
   }
+  .nav__item:hover .nav__sublist {
+    display: none;
+  }
   .visible {
     visibility: visible;
     margin-top: 48px;

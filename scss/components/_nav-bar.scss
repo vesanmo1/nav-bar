@@ -93,6 +93,11 @@
     &__item-link {
       width: 100vw;
     }
+    &__item:hover {
+      .nav__sublist {
+        display: none;
+      }
+    }
   }
 
   .visible {

@@ -53,9 +53,6 @@
 
     &:hover {
       background-color: var(--bg-navbar-hover-color);
-      .nav__sublist {
-        display: block;
-      }
     }
   }
 
@@ -73,6 +70,14 @@
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
+}
+
+@media all and (min-width: 700px) {
+  .nav__item:hover {
+    .nav__sublist {
+      display: block;
+    }
+  }
 }
 
 @media all and (max-width: 700px) {
@@ -93,11 +98,6 @@
     &__item-link {
       width: 100vw;
     }
-    &__item:hover {
-      .nav__sublist {
-        display: none;
-      }
-    }
   }
 
   .visible {
@@ -106,5 +106,29 @@
     height: calc(100vh - 48px);
     width: 100%;
     background-color: var(--bg-navbar-color);
+  }
+
+  .appears1 {
+    .nav__sublist--1 {
+      display: block;
+    }
+  }
+
+  .appears2 {
+    .nav__sublist--2 {
+      display: block;
+    }
+  }
+
+  .appears3 {
+    .nav__sublist--3 {
+      display: block;
+    }
+  }
+
+  .appears4 {
+    .nav__sublist--4 {
+      display: block;
+    }
   }
 }

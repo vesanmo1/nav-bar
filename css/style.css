@@ -77,9 +77,6 @@ Components
 .nav__item:hover {
   background-color: var(--bg-navbar-hover-color);
 }
-.nav__item:hover .nav__sublist {
-  display: block;
-}
 .nav__sublist-link:hover {
   background-color: var(--bg-navbar-hover-sublist);
 }
@@ -95,6 +92,11 @@ Components
   text-decoration: none;
 }
 
+@media all and (min-width: 700px) {
+  .nav__item:hover .nav__sublist {
+    display: block;
+  }
+}
 @media all and (max-width: 700px) {
   .menu-button {
     display: inline-block;
@@ -119,14 +121,23 @@ Components
   .nav__item-link {
     width: 100vw;
   }
-  .nav__item:hover .nav__sublist {
-    display: none;
-  }
   .visible {
     visibility: visible;
     margin-top: 48px;
     height: calc(100vh - 48px);
     width: 100%;
     background-color: var(--bg-navbar-color);
+  }
+  .appears1 .nav__sublist--1 {
+    display: block;
+  }
+  .appears2 .nav__sublist--2 {
+    display: block;
+  }
+  .appears3 .nav__sublist--3 {
+    display: block;
+  }
+  .appears4 .nav__sublist--4 {
+    display: block;
   }
 }

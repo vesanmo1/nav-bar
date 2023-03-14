@@ -37,7 +37,7 @@
     text-decoration: none;
     cursor: pointer;
     color: var(--navbar-text-color);
-    background-color: var(--bg-navbar-color);
+    background-color: var(--bg-navbar-buttons-list-color);
     border: none;
     display: flex;
     align-items: center;
@@ -67,7 +67,7 @@
 .menu-button {
   display: none;
   cursor: pointer;
-  background-color: var(--bg-button-color);
+  background-color: var(--bg-menu-button-color);
   border: none;
   color: white;
   padding: 15px 32px;

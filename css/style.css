@@ -3,11 +3,12 @@ Abstracts
 */
 :root {
   --bg-navbar-color: hsl(351, 81%, 27%);
+  --bg-navbar-buttons-list-color: transparent;
   --bg-navbar-hover-color: hsl(351 80% 16%);
   --bg-navbar-sublist: hsl(10, 66%, 56%);
   --bg-navbar-hover-sublist: hsl(10, 66%, 44%);
   --navbar-text-color: white;
-  --bg-button-color: hsl(351, 80%, 68%);
+  --bg-menu-button-color: hsl(351, 80%, 68%);
 }
 
 /*
@@ -54,6 +55,8 @@ Components
   text-decoration: none;
   cursor: pointer;
   color: var(--navbar-text-color);
+  background-color: var(--bg-navbar-buttons-list-color);
+  border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,7 +87,7 @@ Components
 .menu-button {
   display: none;
   cursor: pointer;
-  background-color: var(--bg-button-color);
+  background-color: var(--bg-menu-button-color);
   border: none;
   color: white;
   padding: 15px 32px;
